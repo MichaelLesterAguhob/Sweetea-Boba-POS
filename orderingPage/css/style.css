@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+body{
+    background-color: #fefefe;
+}
+
+/* Navigation */
+.navb-items .item a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: currentColor;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: #700d6b;
+    box-shadow: 0px 3px 8px rgba(21, 21, 21, 0.996);
+    display: flex;
+    align-items: center;
+}
+
+header .container-fluid{
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navb-logo img{
+    width: 100px;
+    height: 70px;
+}
+
+header .navb-items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 3px;
+} 
+
+header .item{
+    text-align: center;
+    margin-inline: 10%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #fefefe;
+    padding: 5px 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #64d6f4;
+    cursor: pointer;
+}
+
+header .item:hover{
+    border-bottom: 3px solid #64d6f4;
+}
+
+/* NAVIGATION MODAL */
+.mobile-toggler a i{
+    color: #fefefe;
+}
+
+.modal-dialog{
+    margin: 0;
+    width: 430px;
+}
+
+@media (max-width: 450px){
+    .modal-dialog{
+        width: 90%;
+    }
+}
+
+.modal-content{
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #700d6b;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
+}
+
+.modal-content img{
+    width: 100px;
+    height: 70px;
+    margin-top: 17.5px;
+}
+
+.modal-header i{
+    color: #fefefe;
+    font-size: 30px;
+}
+
+.modal-body i{
+    width: 88%;
+    margin: auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+.modal-body .modal-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #274d8a;
+    border-bottom: 1px solid #274d8a;
+}
+
+.modal-body .modal-line:hover{
+    color: #fefefe;
+    border-bottom: 1px solid #fefefe;
+}
+
+.modal-body .modal-line:hover a{
+    color: #fefefe;
+}
+
+.modal-line a{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #fefefe;
+}
+
+.modal-line i{
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin: 15px;
+    padding: 0 0 3px 3px;
+}
+
+/* Responsiveness */
+@media (max-width: 991px){
+    .navb-items .item{
+        display: none;
+    }
+    .navb-items .item-button{
+        display: none;
+    }
+
+    .mobile-toggler a i{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1261px){
+    .navb-items .item a{
+        font-size: 19px;
+    }
+}
+@media (max-width: 1194px){
+    .navb-items .item a{
+        font-size: 16px;
+    }
+    header .item{
+        margin-inline: 10%;
+        font-size: 15px;
+    }
+}
+@media (max-width: 1170px){
+    .navb-items .item a{
+        font-size: 15px;
+    }
+
+    header .item{
+        margin-inline: 7%;
+        font-size: 15px;
+    }
+
+    #catLbl{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1010px){
+    .navb-items .item a{
+        font-size: 15px;
+    }
+
+    header .item{
+        margin-inline: 7%;
+        font-size: 15px;
+    }
+}
+
+/* main content*/
+.col-lg-7{
+    height: 85vh;
+}
+
+#productsDisplay{
+    height: 95%;
+    text-align: center; 
+    overflow: auto;
+    margin-bottom: 10px;
+
+}
+
+.col-lg-3{
+    height: 85vh;
+}
+
+.row #category{
+    overflow: auto;
+    text-align: center;
+}
+
+#catHeaderbody{
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.catRow:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+#searchBox{
+    margin: auto;
+    width: 80%;
+}
+
+.card table{
+    margin: auto;
+    width: 100%;
+}
+
+table .btn{
+    width: 100%;
+}
+
+.card{
+    display:inline-flex;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.spSize{
+    width: 65%;
+    text-align: left;
+}
+.spPrice{
+    width: 35%;
+    text-align: left;
+}
+
+#productCardDisplay{
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 1);
+    margin: 7px;
+}
+
+#sizePriceCont{
+    overflow-y: auto;
+}
+
+.productImage{
+    width: 100px;
+    height: 100px;
+}
+
+#productCardHeader{
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+#productCardDisplay:hover{
+    background-color: rgb(197, 241, 255);
+}
+
+/*ORDERING MODAL */
+
+#orderingModal{
+    max-width: 100%;
+}
+#orderingModalDialog{
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+#orderingModalContent{
+    max-width: 100%;
+    overflow: auto;
+}
+
+#orderingModalHeader{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: none;
+}
+
+.modalHeaderText{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#orderingModalBody{
+    width: 100%;
+}
+
+#orderingForm{
+    width: 100%;
+}
+
+#orderingForm label{
+    width: 100%;
+    color: #fefefe;
+}
+#orderingForm input{
+    width: 100%;
+}
+
+#b1t1{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    color: #fefefe;
+}
+
+#qntybtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 21px;
+}
+
+#size{
+    width: 100%;
+    font-weight: bolder;
+}
+
+#size:hover{
+    cursor: pointer;
+}
+
+#price{
+    width: 100%;
+    font-weight: bolder;
+}
+
+#prodImage{
+    width: 50%;
+    height: 50%;
+}
+
+#pair{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.btnCont{
+    display: block;
+    text-align: center;
+}
+
+#AddOns, #AddOns2:hover{
+cursor: pointer;
+}
+
+#messageModalDialog{
+    min-width: 250px;
+    max-width: 500px;
+    margin-top: 50%;
+    margin: auto;
+    
+}
+
+#messageModalContent{
+    margin-top: 50%;
+    max-height: 200px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#messageModalBody{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#messageModalFooter{
+    border-top: none;
+    display: flex;
+    justify-content: center;
+}
+
+#messageModalText{
+    font-size: larger;
+}
+
+#orderTotal{
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+    font-size: larger;
+}
+
+#placeOrder{
+    width: 100%;
+    min-height: 40px;
+    max-height: 40px;
+    font-size: 13px;
+}
+
+.ordersSummary{
+    height: 78%;
+    overflow: auto;
+}
+
+/* temporarily hide other content */
+#orders, #preparingOrders, #completedOrders{
+    display: none;
+}
+
+#backToHome, #backToHome2, #backToHome3, #backToHome4, #backToHome5, #backToHome6{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#amountPaid{
+    text-align: center;
+    
+}
+
+#cancelCurrentOrder{
+    width: 100%;
+    
+}
+

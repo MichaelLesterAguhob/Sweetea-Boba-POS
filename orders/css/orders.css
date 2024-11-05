@@ -1,0 +1,66 @@
+
+#ordersView{
+    height: 80vh; 
+    text-align: center;
+    overflow:auto; 
+}
+
+#billReceipt{
+    margin: auto;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    min-height: 80vh;
+    max-height: 80vh;
+    min-width: 300px;
+    max-width: 25vw;
+    padding: 0;
+    border: 1px solid grey;
+}
+
+#billReceiptBody{
+    min-width: 99%;
+    max-width: 99%;
+    overflow: auto;
+    padding: 0;
+}
+
+.receiptTh{
+    padding: 2px;
+}
+
+.receiptTd{
+    padding: 2px;
+}
+
+.receiptThBot{
+    padding: 10px;
+}
+
+#tdName{
+    display:inline-table;
+}
+
+.card-header{
+    text-align: left;
+}
+
+/*Confirm Modal */
+#cmDialog{
+    margin: auto;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#cmContent{
+    margin-top: 50%;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#cmBody{
+    text-align: center;
+}
+
+#cmBtn{
+    margin-top: 15%;
+}

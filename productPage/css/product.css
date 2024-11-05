@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+body{
+    background-color: #fefefe;
+}
+
+/* ======== NAVIGATIONS =========== */
+.navb-items .item a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: currentColor;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: #700d6b;
+    box-shadow: 0px 3px 8px rgba(21, 21, 21, 0.996);
+    display: flex;
+    align-items: center;
+}
+
+header .container-fluid{
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navb-logo img{
+    width: 100px;
+    height: 70px;
+}
+
+header .navb-items{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    letter-spacing: 3px;
+} 
+
+header .item{
+    text-align: center;
+    margin-inline: 10%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #fefefe;
+    padding: 5px 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #64d6f4;
+    cursor: pointer;
+}
+
+header .item:hover{
+    border-bottom: 3px solid #64d6f4;
+}
+
+
+/* =========== MODAL =========== */
+.mobile-toggler a i{
+    color: #fefefe;
+    margin-right: 10px;
+}
+
+.modal-dialog{
+    margin: 0;
+    width: 430px;
+}
+
+@media (max-width: 450px){
+    .modal-dialog{
+        width: 80%;
+    }
+}
+
+.modal-content{
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #700d6b;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
+}
+
+.modal-content img{
+    width: 100px;
+    height: 70px;
+    margin-top: 17.5px;
+}
+
+.modal-header i{
+    color: #fefefe;
+    font-size: 30px;
+}
+
+.modal-body i{
+    width: 88%;
+    margin: auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+.modal-body .modal-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #274d8a;
+    border-bottom: 1px solid #274d8a;
+}
+
+.modal-body .modal-line:hover{
+    color: #fefefe;
+    border-bottom: 1px solid #fefefe;
+}
+
+.modal-body .modal-line:hover a{
+    color: #fefefe;
+}
+
+.modal-line a{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #fefefe;
+}
+
+.modal-line i{
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin: 15px;
+    padding: 0 0 3px 3px;
+}
+
+
+@media (max-width: 991px){
+    .navb-items .item{
+        display: none;
+    }
+    .navb-items .item-button{
+        display: none;
+    }
+
+}
+
+
+/* =========== PRODUCT DETAILS ============ */
+.displayedImage{
+    max-width: 50px;
+    max-height: 50px;
+}
+#productDetails{
+    height: 450px;
+    overflow: auto; 
+}
+.prodRow:hover{
+    cursor: pointer;
+}
+.checkbox:hover{
+    cursor: pointer;
+}
+
+.hideId{
+    display: none;
+}
+
+/* ======= ADD MODAL ===========*/
+#addModalDialog{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+#addModalHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 0px solid #fefefe;
+}
+.custom-file-input:hover{
+    cursor: pointer;
+}
+
+
+/* ======== MESSAGE MODAL ===========*/
+#messageModalDialog{
+    margin: auto;
+    width: 90%;
+    height:180px;
+}
+#messageModalContent{
+    margin: auto;
+    width: 100%;
+    max-height: 180px;
+    overflow: auto;
+    margin-top: 50%;
+}
+#messageModalBody{
+    background-color: #700d6b;
+}
+#msgModalFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: none;
+}
+#messageModalBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========== DELETE MODAL DIALOG ========== */
+#delModalDialog{
+    margin: auto;
+    width: 90%;
+    height:180px;
+}
+#delModalContent{
+    margin: auto;
+    width: 100%;
+    max-height: 180px;
+    overflow: auto;
+    margin-top: 50%;
+}
+
+#delModalBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Size Price Modal */
+#spModalDialog{
+    margin:auto;
+    width: 90%;
+    max-height: 350px;
+}
+
+#spModalContent{
+    margin:auto;
+    width: 100%;
+    max-height: 350px;
+    overflow: auto;
+    margin-top: 50%;
+}
+
+#spModalHeader{
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#size, #price{
+    text-align: center;
+}
+
+.spLbl{
+    color: #fefefe; 
+}
+
+#spRow:hover{
+    cursor: pointer;
+}
+
+/* SP DELETE */
+#spDelModalDialog{
+    margin:auto;
+    width: 90%;
+    max-height: 250px;
+}
+
+#spDelModalContent{
+    margin:auto;
+    width: 100%;
+    max-height: 250px;
+    overflow: auto;
+    margin-top: 50%;
+}
+
+#aoRow:hover{
+    cursor: pointer;
+}
+
+#backToHome, #backToHome2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}

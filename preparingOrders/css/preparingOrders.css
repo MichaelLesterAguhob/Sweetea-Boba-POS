@@ -1,0 +1,18 @@
+
+#preparingOrdersView{
+    height: 80vh; 
+    text-align: center; 
+    overflow:auto; 
+} 
+
+.prepText{
+    display:inline-flex;
+    background-color: rgb(14, 141, 180);
+    letter-spacing: 2px;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 7px;
+}
